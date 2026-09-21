@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-// UTF-16 <-> UTF-8 (CP_UTF8 65001 and kodi4xbox convention 1).
+// UTF-16 <-> UTF-8 (CP_UTF8 65001).
 
 #include <stdint.h>
 #include <string.h>
@@ -9,7 +9,7 @@
 
 static int IsUtf8CodePage (UINT page)
 {
-  return page == CP_UTF8 || page == CP_UTF8_NXDK_KODI;
+  return page == CP_UTF8;
 }
 
 static int Utf16LenIncludingNul (const uint16_t *src)

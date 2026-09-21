@@ -1,5 +1,4 @@
 // SPDX-License-Identifier: MIT
-// Experimental UTF-8 WideChar API (local homelab test; not upstream yet).
 
 #ifndef __WINNLS_H__
 #define __WINNLS_H__
@@ -9,11 +8,6 @@
 
 #ifndef CP_UTF8
 #define CP_UTF8 65001
-#endif
-
-/* kodi4xbox unimplemented.h uses 1 for UTF-8 */
-#ifndef CP_UTF8_NXDK_KODI
-#define CP_UTF8_NXDK_KODI 1
 #endif
 
 #ifdef __cplusplus
